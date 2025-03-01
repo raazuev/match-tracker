@@ -1,0 +1,17 @@
+@use "@/shared/assets/styles/_variables.scss" as vars;
+
+.button {
+  font-family: "Inter";
+  border-radius: 4px;
+  padding: 10px 32px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.35rem;
+  background-color: vars.$Primary_Btn;
+  color: vars.$Light_Primary;
+  flex: 1;
+  transition: all 0.3s ease;
+  &:hover {
+    opacity: 90%;
+  }
+}

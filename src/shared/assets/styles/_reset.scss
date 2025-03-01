@@ -1,0 +1,64 @@
+@use "scss-reset";
+@use "./variables" as vars;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  background-color: vars.$Dark_Primary;
+  color: vars.$Light_Primary;
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  max-width: 1836px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+main {
+  flex-grow: 1;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+svg {
+  width: 47px;
+  height: 50px;
+  cursor: pointer;
+}

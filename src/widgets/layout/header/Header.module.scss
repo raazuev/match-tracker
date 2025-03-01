@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 20px;
+
+  &__title {
+    font-family: "TacticSans";
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2rem;
+    line-height: 1.7rem;
+  }
+}
