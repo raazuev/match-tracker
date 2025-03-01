@@ -1,54 +1,84 @@
-# React + TypeScript + Vite
+# Match Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Match Tracker is a web application for tracking and displaying match information. The project uses advanced technologies and architectural approaches to ensure scalability and code usability.
 
-Currently, two official plugins are available:
+## Project Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Match Tracker allows users to track information about current and completed matches, as well as their results, players and teams. The project implements support for data updates via API with the server.
 
-## Expanding the ESLint configuration
+The application includes the following functional blocks:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Viewing information about matches.
+- Match results with detailed data on players.
+- Interactive interface with the ability to update match data.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+The project uses Feature-Sliced Design (FSD) architectural approach, which provides good code structure and scalability.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Technologies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **React + TypeScript**
+- **SCSS**
+- **React Query**
+- **Axios**
+- **Vite**
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Project structure
+
+└── 📁src
+    └── 📁app
+    └── 📁entities
+    └── 📁pages
+    └── 📁shared
+    └── 📁widgets
+    └── 📁features
+    └── 📁main.tsx
+
+## The main features of the structure:
+
+- app - initial entry point and routing settings.
+- entities - business logic and domain entities (e.g., match, team).
+- pages - components for displaying application pages.
+- shared - common components, helpers, APIs.
+- widgets - widgets and overused components.
+- features - functional blocks that can include both UI components and data interaction logic.
+
+## Installation
+
+1. Cloning a repository
+bash
+Copy
+Edit
+git clone https://github.com/your-username/match-tracker.git
+cd match-tracker
+
+2. Installing dependencies
+Make sure you have Node.js version 16 or higher installed.
+
+bash
+Copy
+Edit
+npm install
+# or, if using yarn
+yarn install
+
+3. Starting a project
+To start the project in development mode, use the command:
+
+bash
+Copy
+Edit
+npm run dev
+# or, if using yarn
+yarn dev
+
+The application will then be available at http://localhost:3000.
+
+4. Deployment
+To build the project for the production environment, run the command:
+
+bash
+Copy
+Edit
+npm run build
+# or
+yarn build

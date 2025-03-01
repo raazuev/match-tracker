@@ -1,0 +1,81 @@
+.teamCard {
+  background: #1e1e2e;
+  padding: 16px;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 2px solid transparent;
+
+  &:hover {
+    border-color: #5a5af7;
+  }
+
+  &.open {
+    background: #29293f;
+  }
+}
+
+.matchHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.matchTime {
+  font-weight: bold;
+}
+
+.teamInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+}
+
+.teamName {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.teamScore {
+  font-size: 18px;
+  font-weight: bold;
+  color: #5a5af7;
+  margin: 0 10px;
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statusLabel {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+
+  &.scheduled {
+    background: #f39c12;
+    color: #fff;
+  }
+
+  &.ongoing {
+    background: #e74c3c;
+    color: #fff;
+  }
+
+  &.finished {
+    background: #2ecc71;
+    color: #fff;
+  }
+}
