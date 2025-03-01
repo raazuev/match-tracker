@@ -1,0 +1,18 @@
+@use "@/shared/assets/styles/_variables.scss" as vars;
+
+.inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  border-radius: 4px;
+  padding: 22px;
+  background-color: vars.$Dark_Second;
+  margin: 10px;
+
+  .cards__teams {
+    width: 100%;
+  }
+}
