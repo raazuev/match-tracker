@@ -1,6 +1,8 @@
 import axios from "axios";
 import type { Match, ApiResponse } from "@/shared/lib/types/matchTypes";
 
+export type { Match, ApiResponse };
+
 const API_URL = "https://app.ftoyd.com/fronttemp-service";
 
 export const fetchMatches = async (): Promise<Match[]> => {
@@ -13,7 +15,11 @@ export const fetchMatches = async (): Promise<Match[]> => {
 
     return response.data.data.matches;
   } catch (error) {
-    console.error("Ошибка при загрузке матчей:", error);
+    console.error(
+      "Ошибка при загрузке матчей:",
+      error instanceof Error ? error.message : error
+    );
+
     return [];
   }
 };
