@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./RefreshButton.module.scss";
+import styles from "./Button.module.scss";
 import classNames from "classnames";
 
 interface ButtonProps {
@@ -9,7 +9,7 @@ interface ButtonProps {
   className?: string;
 }
 
-export const RefreshButton = ({
+export const Button = ({
   children,
   onClick,
   type = "button",
@@ -18,7 +18,7 @@ export const RefreshButton = ({
   return (
     <button
       onClick={onClick}
-      className={classNames(styles.refresh_button, className)}
+      className={classNames(styles.button, className)}
       type={type}
     >
       {children}

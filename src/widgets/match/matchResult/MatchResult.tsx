@@ -1,4 +1,4 @@
-import { Match, Team } from "@/shared/services/api";
+import { Match } from "@/shared/lib/types/matchTypes";
 import styles from "./MatchResult.module.scss";
 
 interface MatchResultProps {

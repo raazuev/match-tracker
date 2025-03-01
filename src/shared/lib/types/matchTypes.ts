@@ -23,5 +23,6 @@ export interface Match {
 
 export interface ApiResponse {
   ok: boolean;
-  data: { matches: Match[] };
+  data?: { matches: Match[] };
+  error?: string;
 }
